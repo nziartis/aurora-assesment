@@ -168,26 +168,6 @@ def analyze():
         for m in hits[:5]:
             print(f"    [{m['user_name']}] \"{m['message'][:100]}\"")
 
-    # --- Contradictory updates ---
-    section("CONTRADICTORY CONTACT UPDATES")
-    for name, msgs in by_user.items():
-        emails = set()
-        phones = set()
-        cards = set()
-        for m in msgs:
-            for e in email_re.findall(m["message"]):
-                emails.add(e)
-            for p in phone_re.findall(m["message"]):
-                phones.add(p[0] if isinstance(p, tuple) else p)
-            for c in cc_re.findall(m["message"]):
-                cards.add(c)
-        if len(emails) > 1:
-            print(f"  [!] {name} has {len(emails)} different emails: {emails}")
-        if len(phones) > 1:
-            print(f"  [!] {name} has {len(phones)} different phone numbers")
-        if len(cards) > 1:
-            print(f"  [!] {name} has {len(cards)} different card numbers: {cards}")
-
     # --- Activity patterns ---
     section("ACTIVITY PATTERNS PER MEMBER")
     for name, msgs in sorted(by_user.items()):

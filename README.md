@@ -10,7 +10,7 @@ A minimal API service that answers natural-language questions about member data.
 POST /ask
 Content-Type: application/json
 
-{ "question": "When is Layla planning her trip to London?" }
+{ "question": "When is Layla planning her next trip to London?" }
 ```
 
 Response:

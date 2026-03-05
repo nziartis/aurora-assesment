@@ -46,7 +46,7 @@ curl -X POST http://localhost:8000/ask \
 
 curl -X POST http://localhost:8000/ask \
   -H "Content-Type: application/json" \
-  -d '{"question": "What are Amira'\''s favorite restaurants?"}'
+  -d '{"question": "What are Amina'\''s favorite restaurants?"}'
 ```
 
 ## Deployment (Render.com)

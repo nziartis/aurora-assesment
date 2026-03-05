@@ -40,7 +40,7 @@ Get a free Google AI Studio API key at https://aistudio.google.com/apikey
 ```bash
 curl -X POST http://localhost:8000/ask \
   -H "Content-Type: application/json" \
-  -d '{"question": "When is Layla planning her trip to London?"}'
+  -d '{"question": "When is Layla planning her next trip to London?"}'
 
 curl -X POST http://localhost:8000/ask \
   -H "Content-Type: application/json" \

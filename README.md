@@ -81,7 +81,6 @@ A third option was to parse all messages at startup and extract structured facts
 | 10 members | 288–365 messages each over exactly 1 year |
 | Truncated messages | 2 cut-off mid-sentence ("I want to", "I finally") |
 | PII in plaintext | 2 credit cards, 24 phone numbers, 8 emails sent as plain text |
-| Contradictory updates | Multiple members update contact details multiple times with different values |
 | Synthetic data signals | Uniform 5–7 day max gaps across all members, exactly 365-day span |
 | Unreliable API | total field sometimes misreports; pagination breaks intermittently |
 

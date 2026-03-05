@@ -49,16 +49,6 @@ curl -X POST http://localhost:8000/ask \
   -d '{"question": "What are Amina'\''s favorite restaurants?"}'
 ```
 
-## Deployment (Render.com)
-
-1. Push this repo to GitHub (must be public)
-2. Create a new **Web Service** on [render.com](https://render.com) connected to the repo
-3. Add `GOOGLE_API_KEY` as an environment variable in the Render dashboard
-4. Deploy — `render.yaml` handles the build and start commands
-
-> **Note:** Render's free tier spins down after 15 minutes of inactivity. The first request after
-> a dormant period may take 30–60 seconds to respond.
-
 ## How it works
 
 1. At startup, all member messages are fetched from the upstream API and cached in memory (auto-refreshed every 10 minutes)

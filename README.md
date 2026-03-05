@@ -2,6 +2,8 @@
 
 A minimal API service that answers natural-language questions about member data.
 
+**Live demo:** https://aurora-assesment.onrender.com/
+
 ## Endpoint
 
 ```
